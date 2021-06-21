@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>The Frameworks</title>
+
+		<meta name="description" content="something about the Frameworks">
+		<meta name="author" content="Alexandr Demchenko">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<a href="https://angular.io/">
+						<img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="angular logo" style="height: 180px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+					</a>
+					<a href="https://reactjs.org/">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" alt="react logo" style="height: 180px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+					</a>
+					<a href="https://ru.vuejs.org/">
+						<img src="https://ru.vuejs.org/images/logo.png" alt="vue logo" style="height: 180px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+					</a>
+					<h3>The Frameworks</h3>
+					<p>
+						<small>Created by <a href="https://github.com/Vitebsk121">Alexandr Demchenko</a></small>
+					</p>
+					<aside class="notes">
+						welcome everyone. name the topic of the presentation
+					</aside>
+				</section>
+
+				<section>
+					<h2>Hello There</h2>
+					<p>
+						In this presentation, I would like to talk to you about the most popular frontend frameworks. From this presentation, you will learn some general information about these frameworks, as well as some pros and cons. Perhaps you, like me, are now faced with the choice of which framework you need. I hope my presentation will help you make your choice. Good luck!
+					</p>
+					<aside class="notes">
+						ask the audience what they think the framework is
+					</aside>
+				</section>
+
+				<!-- About the frameworks -->
+				<section>
+					<section>
+						<h2>The framework</h2>
+						<p>What is a framework?</p>
+						<br>
+						<p style="font-size: 150px; color: red;">?</p>
+						<aside class="notes">
+							read from the slide
+						</aside>
+					</section>
+					<section>
+						<p>A framework is a structure on the basis of which you can create a final product. It's easier than writing all the code from scratch.</p>
+						<br>
+						<img src="https://st2.depositphotos.com/1537427/6920/v/950/depositphotos_69206631-stock-illustration-hands-with-care-packaging-symbol.jpg" alt="product icon" style="height: 180px; margin: 0 auto 4rem auto; background: transparent; border-radius: 15px;" class="demo-logo">
+						<aside class="notes">
+							read from the slide
+						</aside>
+					</section>
+					<section style="background-image: url(https://i.pinimg.com/originals/23/38/9c/23389cec99ba80390c1898b6dbe1e390.jpg); background-position: center; background-size: cover; border-radius: 15px;">
+						<p style="color: white; background-color: rgba(0,0,0,0.6);">Let's draw an analogy with the house. If you want to build it, you can buy materials and do everything yourself, filling the cones. And you can download a ready-made construction plan on the Internet. Of course, you can still get bumps when you glue wallpaper and choose furniture. But at least the foundation, walls, roof, and sewer system will definitely be in order. Because how to build them is spelled out in the construction plan.</p>
+						<br>
+						<aside class="notes">
+							tell us an example about drawing
+						</aside>
+					</section>
+					<section>
+						<p>let's compare the framework, the code from scratch and the CMS program for clarity.</p>
+						<br>
+						<aside class="notes">
+							tell us an example about drawing
+						</aside>
+					</section>
+					<section data-auto-animate>
+						<h2 data-id="code-title">Write code from scratch?</h2>
+						<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+							function addNewHTMLElement(tag) {
+							  document.createElement(tag);
+							}
+						</code></pre>
+						<p style="font-size: 20px;">Open Notepad and write the entire site from a blank line. This is convenient: you can do absolutely everything for yourself. Exactly as you need it. You can use any technology.
+							<br>
+							<span style="color: rgb(0, 157, 255)">Let's draw an analogy with drawing. Writing code from scratch is like being in front of a completely blank sheet of paper, with all the possible drawing tools at hand, from markers to crayons. A complete flight of fancy.</span>
+							<br>
+							This approach has its drawbacks. First, it is long and expensive. Secondly, it is difficult. You need to carefully check the performance of each function, so that nothing gets stuck. This approach has a high entry threshold: a novice developer will not be able to create a full-fledged product from scratch. The price of every mistake is high.</p>
+					</section>
+					<section>
+						<h2>Use a CMS?</h2>
+						<img src="https://pagedesignshop.com/wp-content/uploads/2018/11/cms-1.jpg" alt="product icon" style="height: 180px; margin: 0 auto 4rem auto; background: transparent; border-radius: 15px;" class="demo-logo">
+						<p style="font-size: 20px;">You may have heard the names of the most popular ones: WordPress, Joomla, Drupal. Using a CMS is almost the opposite of the first option. Any confident computer user can create a website using a CMS, he does not even need to be a developer.
+
+							CMS is, in fact, a ready-made website. You just need to fill it with content: upload text, images, videos, and any other content. And customize the look: fonts, colors, styles, and more. <span style="color: rgb(0, 157, 255)">If we continue the analogy with drawing, then using a CMS is a coloring book. You have already drawn everything for you, it is impossible to miss. It remains only to choose the color of the felt-tip pen and paint over the necessary parts of the drawing.</span></p>
+						<br>
+						<aside class="notes">
+							tell us an example about drawing
+						</aside>
+					</section>
+					<section>
+						<h2>Use a framework?</h2>
+						<img src="https://codelatte.org/wp-content/uploads/2018/09/js-framework.jpg" alt="product icon" style="height: 180px; margin: 0 auto 4rem auto; background: transparent; border-radius: 15px;" class="demo-logo">
+						<p style="font-size: 20px;">Framework is an intermediate option in terms of flexibility and complexity between writing code from scratch and using a CMS.
+							<br>
+							<span style="color: rgb(0, 157, 255)">If writing code from scratch is drawing with any tools on a blank sheet of paper, and using CMS is coloring, then using framework is drawing in a notebook in a checkered box. On the one hand, you can still draw anything and however you want. On the other hand, there are already guide lines and notepad borders, so it's easier to draw.</span>
+						<br>
+						<aside class="notes">
+							what are the pros and cons do you think? ok, next slide
+						</aside>
+					</section>
+					<section>
+						<h2 style="font-size: 26px; color: rgb(67, 135, 67);">Advantages of using the framework</h2>
+						<ul>
+							<li>
+								<p style="font-size: 18px;">Projects are easy to develop and improve, because the structure is standard. Any programmer who works with some framework will be able to work with any project made on this framework</p>
+							</li>
+							<li>
+								<p style="font-size: 18px;">It's faster and cheaper than writing code from scratch. At the same time, there are quite a lot of opportunities for editing the product, which are often deprived of sites on standardized CMS</p>
+							</li>
+							<li>
+								<p style="font-size: 18px;">The framework allows you to avoid common and optional errors</p>
+							</li>
+						</ul>
+						<hr>
+						<h2 style="font-size: 26px; color: rgb(252, 94, 94);">Disdvantages of using the framework</h2>
+						<ul>
+							<li>
+								<p style="font-size: 18px;">Some functions and parts will have to be created from scratch</p>
+							</li>
+							<li>
+								<p style="font-size: 18px;">Most frameworks are open source. This means that you need to address the security issues of the project separately.</p>
+							</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Angular</h2>
+						<p>Let's get acquainted with the angular</p>
+						<br>
+						<a href="https://angular.io/">
+							<img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="angular logo" style="height: 180px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+						</a>
+						<aside class="notes">
+							read from the slide
+						</aside>
+					</section>
+					<section>
+						<h2>Supporting Angular</h2>
+						<p style="color:rgb(0, 157, 255)">This is the development of the IT industry giant <a href="https://en.wikipedia.org/wiki/Google" style="color: yellowgreen;">Google</a></p>
+						<br>
+						<p>In fact, this is a huge plus. You can be sure that this framework will always have support.</p>
+						<aside class="notes">
+							read from the slide
+						</aside>
+					</section>
+					<section>
+						<p style="color:rgb(121, 174, 206); font-size: 26px;">
+							Angular is a <a href="https://en.wikipedia.org/wiki/TypeScript">TypeScript</a>-based open-source web application framework led by the Angular Team at Google and by a community of individuals and corporations. Angular is a complete rewrite from the same team that built AngularJS.
+							<br>
+							Angular is used as the frontend of the MEAN stack, consisting of MongoDB database, Express.js web application server framework, Angular itself (or AngularJS), and Node.js server runtime environment.</p>
+							<aside class="notes">
+								read from the slide
+							</aside>
+					</section>
+					<section>
+						<h2 style="font-size: 26px; color: rgb(0, 199, 196);">Advantages of using the Angular</h2>
+						<ul>
+							<li>
+								<p style="font-size: 18px;">Angular is used together with Typescript. It has exceptional support for this.
+								</p>
+							</li>
+							<li>
+								<p style="font-size: 18px;">Angular-language-service-provides intelligent capabilities and auto-completion of the HTML component template.</p>
+							</li>
+							<li>
+								<p style="font-size: 18px;">New features such as generation Angular using the npm libraries from the CLI, generation, and component development using Angular.</p>
+							</li>
+							<li>
+								<p style="font-size: 18px;">Detailed documentation that allows the developer to get all the necessary information without resorting to the help of his colleagues. However, this requires more time to learn.</p>
+							</li>
+							<li>
+								<p style="font-size: 18px;">One-way data binding that ensures exceptional application behavior, which minimizes the risk of possible errors.</p>
+							</li>
+							<li>
+								<p style="font-size: 18px;">MVVM (Model-View-ViewModel), which allows developers to work separately on the same section of the application, using the same data set.</p>
+							</li>
+							<li>
+								<p style="font-size: 18px;">Implement dependencies on components related to modules and modularity in general.</p>
+							</li>
+							<li>
+								<p style="font-size: 18px;">A structure and architecture specifically designed for large project scalability.</p>
+							</li>
+						</ul>
+						<aside class="notes">
+							read from the slide
+						</aside>
+					</section>
+					<section>
+						<h2 style="font-size: 26px; color: rgb(255, 246, 148);">Disdvantages of using the Angular</h2>
+						<ul>
+							<li>
+								<p style="font-size: 18px;">The variety of different structures (Injectables, Components, Pipes, Modules, etc.) complicates the study compared to React and Vue.js that only have "Component".</p>
+							</li>
+							<li>
+								<p style="font-size: 18px;">Relatively slow performance, given the different metrics. On the other hand, this can be easily solved by using the so-called "ChangeDetectionStrategy", which helps to manually control the rendering process of components.</p>
+							</li>
+						</ul>
+						<aside class="notes">
+							how do you think? what companies using Angular?
+						</aside>
+					</section>
+					<section>
+						<h2>Companies using Angular:</h2>
+						<ul>
+							<li>
+								<a href="https://www.microsoft.com/" style="color: rgb(0, 255, 229);">Microsoft</a>
+							</li>
+							<li>
+								<a href="https://www.mcdonalds.com/" style="color: rgb(255, 89, 0);">MacDonald’s</a>
+							</li>
+							<li>
+								<a href="https://www.apple.com/" style="color: rgb(0, 60, 255);">Apple</a>
+							</li>
+							<li>
+								<a href="https://www.youtube.com/" style="color: rgb(0, 255, 21);">YouTube</a>
+							</li>
+							<li>
+								<a href="https://www.nike.com/" style="color: rgb(255, 234, 0);">Nike</a>
+							</li>
+							<li>
+								<a href="https://www.google.com/" style="color: rgb(0, 119, 255);">Google</a>
+							</li>
+							<li>
+								<a href="https://telegram.org/" style="color: rgb(119, 0, 255);">Telegram</a>
+							</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>React</h2>
+						<p>Let's get acquainted with the React</p>
+						<br>
+						<a href="https://reactjs.org/">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" alt="react logo" style="height: 180px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+						</a>
+					</section>
+					<section>
+						<h2>Supporting React</h2>
+						<p style="color:rgb(0, 157, 255)">React is a JavaScript library developed by <a href="https://facebook.com/" style="color: rgb(0, 255, 21);">Facebook</a> in 2013, which is great for creating modern single-page applications of any size and scale.</p>
+					</section>
+					<section>
+						<p style="color:rgb(121, 174, 206); font-size: 26px;">
+							React is an open-source front-end JavaScript library for building user interfaces or UI components. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications. However, React is only concerned with state management and rendering that state to the DOM, so creating React applications usually requires the use of additional libraries for routing, as well as certain client-side functionality.</p>
+					</section>
+					<section>
+						<h2 style="font-size: 26px; color: rgb(0, 199, 196);">Advantages of using the React</h2>
+						<ul>
+							<li>
+								<p style="font-size: 18px;">
+									Easy to learn, thanks to its simple design, the use of JSX (HTML-like syntax) for templates, and very detailed documentation. Developers spend more time writing modern JavaScript and worry less about framework-specific code.
+								</p>
+							</li>
+							<li>
+								<p style="font-size: 18px;">
+									Very fast, thanks to the React Virtual DOM implementation and various rendering optimizations.
+								</p>
+							</li>
+							<li>
+								<p style="font-size: 18px;">
+									Excellent server-side rendering support, making it a powerful platform for content-oriented applications.
+								</p>
+							</li>
+							<li>
+								<p style="font-size: 18px;">
+									First-class Progressive Web App (PWA) support thanks to the `create-react-app`app generator.
+								</p>						
+							</li>
+							<li>
+								<p style="font-size: 18px;">
+									Data binding is one-way, which means fewer unwanted side effects.
+								</p>						
+							</li>
+							<li>
+								<p style="font-size: 18px;">
+									Redux, the most popular application state management platform in React, is easy to learn and use.
+								</p>						
+							</li>
+							<li>
+								<p style="font-size: 18px;">
+									React implements functional programming (FP) concepts by creating easy-to-test and reusable code.
+								</p>						
+							</li>
+							<li>
+								<p style="font-size: 18px;">
+									Applications can be created using TypeScript or Facebook's Flow, which have built-in JSX support.
+								</p>						
+							</li>
+							<li>
+								<p style="font-size: 18px;">
+									Switching between versions is usually very simple: Facebook provides "code modules" to automate most of the process.
+								</p>						
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h2 style="font-size: 26px; color: rgb(255, 246, 148);">Disdvantages of using the React</h2>
+						<ul>
+							<li>
+								<p style="font-size: 18px;">
+									React is not unambiguous and leaves developers to choose the best way to develop. This can be solved by strong project leadership and good processes.
+								</p>
+							</li>
+							<li>
+								<p style="font-size: 18px;">
+									The community is divided by the ways of writing CSS in React, which are divided into traditional style sheets (CSS Modules) and CSS-in-JS (i.e. Emotion and Styled Components).
+								</p>
+							</li>
+							<li>
+								<p style="font-size: 18px;">
+									React is moving away from class-based components, which can be an obstacle for developers who are more comfortable working with object-oriented programming (OOP).
+								</p>
+							</li>
+							<li>
+								<p style="font-size: 18px;">
+									Mixing templates with logic (JSX) can confuse some developers when they first get to know React.
+								</p>
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Companies using React:</h2>
+						<ul>
+							<li>
+								<a href="https://www.facebook.com/" style="color: rgb(255, 0, 174);">Facebook</a>
+							</li>
+							<li>
+								<a href="https://www.instagram.com/" style="color: rgb(255, 0, 255);">Instagram</a>
+							</li>
+							<li>
+								<a href="https://www.netflix.com/" style="color: rgb(0, 60, 255);">Netflix</a>
+							</li>
+							<li>
+								<a href="https://www.nytimes.com/" style="color: rgb(0, 157, 255);">New York Times</a>
+							</li>
+							<li>
+								<a href="https://www.yahoo.com/" style="color: rgb(255, 234, 0);">Yahoo</a>
+							</li>
+							<li>
+								<a href="https://www.whatsapp.com/" style="color: rgb(0, 255, 42);">Whatsapp</a>
+							</li>
+							<li>
+								<a href="https://airbnb.org/" style="color: rgb(255, 0, 0);">Airbnb</a>
+							</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Vue</h2>
+						<p>Let's get acquainted with the Vue</p>
+						<br>
+						<a href="https://vuejs.org/">
+							<img src="https://ru.vuejs.org/images/logo.png" alt="vue logo" style="height: 180px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+						</a>
+					</section>
+					<section>
+						<h2>Supporting Vue</h2>
+						<p style="color:rgb(0, 157, 255)">Vue was created by Evan You, and is maintained by him and the rest of the active core team members.</p>
+						<br>
+						<p>Since vue is supported only by its creators and there is no big company behind it, many developers are afraid to use vue for serious projects. There is too much risk that the vue support may end at any time.</p>
+					</section>
+					<section>
+						<h2 style="font-size: 26px; color: rgb(0, 199, 196);">Advantages of using the Vue</h2>
+						<ul>
+							<li>
+								<p style="font-size: 18px;">
+									Enhanced HTML. This means that Vue.js has many characteristics similar to Angular, and this, thanks to the use of various components, helps to optimize HTML blocks.
+								</p>
+							</li>
+							<li>
+								<p style="font-size: 18px;">
+									Detailed documentation. Vue.js has very detailed documentation that can speed up the learning process for developers and save a lot of time on app development by using only basic knowledge of HTML and JavaScript.
+								</p>
+							</li>
+							<li>
+								<p style="font-size: 18px;">
+									Adaptability. There can be a quick transition from other frameworks to Vue.js because of the similarity to Angular and React in terms of design and architecture.
+								</p>
+							</li>
+							<li>
+								<p style="font-size: 18px;">
+									Amazing. Vue integration.js can be used for creating single-page applications, as well as for more complex web-based application interfaces. It is important that small interactive elements can be easily integrated into the existing infrastructure without negative consequences.
+								</p>
+							</li>
+							<li>
+								<p style="font-size: 18px;">
+									Scaling. Vue.js can help in the development of fairly large reusable templates that can be done in almost the same time as simpler ones.
+								</p>
+							</li>
+							<li>
+								<p style="font-size: 18px;">
+									Tiny size. Vue.js weighs about 20KB, while maintaining its speed and flexibility, allowing for much better performance compared to other platforms.
+								</p>
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h2 style="font-size: 26px; color: rgb(255, 246, 148);">Disdvantages of using the Vue</h2>
+						<ul>
+							<li>
+								<p style="font-size: 18px;">
+									Lack of resources. Vue.js still has a fairly small market share compared to React or Angular, which means that knowledge sharing in this environment is still in its infancy.
+								</p>
+							</li>
+							<li>
+								<p style="font-size: 18px;">
+									Risk of excessive flexibility. Sometimes at Vue.js may have problems when integrating into huge projects, and there is still no experience of possible solutions, but they will definitely appear in the near future.
+								</p>
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Companies using Vue:</h2>
+						<ul>
+							<li>
+								<a href="https://www.mi.com/" style="color: rgb(255, 0, 47);">Xiaomi</a>
+							</li>
+							<li>
+								<a href="https://www.alibaba.com/" style="color: rgb(0, 255, 238);">Alibaba</a>
+							</li>
+							<li>
+								<a href="https://www.wizzair.com/" style="color: rgb(13, 255, 0);">WizzAir</a>
+							</li>
+							<li>
+								<a href="https://www.euronews.com/" style="color: rgb(0, 60, 255);">EuroNews</a>
+							</li>
+							<li>
+								<a href="https://www.gitlab.org/" style="color: rgb(255, 234, 0);">Gitlab</a>
+							</li>
+							<li>
+								<a href="https://www.adobe.com/" style="color: rgb(255, 162, 0);">Adobe</a>
+							</li>
+							<li>
+								<a href="https://behance.net/" style="color: rgb(201, 22, 22);">Behance</a>
+							</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<p style="font-size: 24px; color: rgb(121, 174, 206);">In conclusion, I want to say that for an experienced developer, there is no significant difference in which framework to use, it just takes some time to get used to the new one. In our company, we use mostly React and Angular, but Vue.js is also on the note. Each framework has its own pros and cons, which means that when developing a product, you need to make the right choice for each individual case. P.S. Below you will find a slide where you can see information on vacancies in the context of these three frameworks. Good Luck To you!</p>
+						<aside class="notes">
+							draw conclusions, tell about the different sides of the choice. where do you want to work? what programs do you want to create? how much time and effort are you willing to spend on learning?
+						</aside>
+					</section>
+					<section>
+						<h2 style="color: rgb(255, 162, 0);">Jobs</h2>
+						<p style="font-size: 24px; color: royalblue;">If you want to learn the framework that will give you the best odds of landing a job in 2021, your best bet is still React, and has been since 2017. React is mentioned in 47.6% of the listings which mention a common front-end framework, Angular picks up 41.2%, and Vue.js trails at 11.2%.</p>
+						<img src="https://miro.medium.com/max/1200/1*xMWh_sQMH4ebPGHVyHVmzA.png" alt="chart of job" style="height: 500px; margin: 0 auto 4rem auto; background: transparent; border-radius: 20px;" class="demo-logo">
+					</section>
+				</section>
+
+				<section>
+					<h2>
+						<span style="color: blue;">T</span>
+						<span style="color: rgb(0, 102, 255);">h</span>
+						<span style="color: rgb(0, 157, 255);">a</span>
+						<span style="color: rgb(0, 229, 255);">n</span>
+						<span style="color: rgb(0, 255, 174);">k</span>
+					</h2>
+					<h2>
+						<span style="color: rgb(43, 255, 0);">Y</span>
+						<span style="color: rgb(242, 255, 0);">o</span>
+						<span style="color: rgb(255, 38, 0);">u</span>
+					</h2>
+					<aside class="notes">
+						thanks!
+					</aside>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+	</body>
+</html>
